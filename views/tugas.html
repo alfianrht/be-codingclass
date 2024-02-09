@@ -1,0 +1,50 @@
+<!-- views/form_tugas.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Upload Tugas</title>
+</head>
+<body>
+    <h2>Form Upload Tugas</h2>
+    <form action="/tugas/upload" method="POST">
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required>
+        
+        <br><br>
+        
+        <label for="kelas">Kelas:</label><br>
+        <select id="kelas" name="kelas" required>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+
+        <br><br>
+        
+        <label for="pertemuan">Pertemuan:</label><br>
+        <select id="pertemuan" name="pertemuan" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        
+        <br><br>
+
+        <label for="link">Link Tugas:</label><br>
+        <input type="text" id="link" name="link" required>
+        
+        <br><br>
+
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
